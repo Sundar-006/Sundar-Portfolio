@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
     <style>
         * {
             margin: 0;
@@ -790,7 +792,7 @@
                 <i class='fas fa-graduation-cap'></i>
                 <h3>Master of Computer Applications</h3>
                 <p><strong>SASTRA Deemed University</strong></p>
-                <p>CGPA: 7.3 | 2025</p>
+                <p>CGPA: 7.34 | 2025</p>
             </div>
             <div class="skill-box">
                 <i class='fas fa-graduation-cap'></i>
@@ -878,20 +880,22 @@
 
             <div class="project-card">
                 <div class="project-image">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=500&fit=crop&q=80"
-                        alt="Virtual Anatomy Laboratory">
+                    <img src="./images/travel.jpg"
+                        alt="Travel Ease">
                 </div>
                 <div class="project-content">
-                    <h3>Virtual Anatomy Laboratory</h3>
-                    <p>An immersive 3D virtual anatomy lab built with Unity for interactive medical learning, featuring
-                        detailed anatomical models and VR controller manipulation.</p>
+                    <h3>Travel Ease </h3>
+                    <p>Developed Travel Ease, a responsive travel website that simplifies trip planning and destination exploration through intuitive design and well-structured content, enabling easy access to travel information across devices.</p>
                     <div class="tech-stack">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">3D Modeling</span>
-                        <span class="tech-tag">VR Development</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">BootStrap</span>
                     </div>
-
+                     <div class="project-links">
+                        <a href="https://sundar-006.github.io/TravelEase/" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -941,7 +945,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer -->     
+
     <footer class="footer">
         <p>&copy; 2025 Sundar. All Rights Reserved.</p>
     </footer>
@@ -949,7 +954,7 @@
     <script>
         // Initialize EmailJS
         (function () {
-            emailjs.init("YOUR_PUBLIC_KEY"); // You need to replace this with your EmailJS public key
+            emailjs.init("uStLh3QIJo15T5isc"); // You need to replace this with your EmailJS public key
         })();
 
         // Toggle menu icon
@@ -1043,7 +1048,7 @@
             submitBtn.disabled = true;
 
             // Send email using EmailJS
-            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            emailjs.sendForm('service_0ys1oss', 'template_m6y2dn7', this)
                 .then(function (response) {
                     // Success
                     statusMessage.style.display = 'block';
